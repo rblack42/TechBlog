@@ -1,0 +1,19 @@
+# Python
+*.pyc
+
+# Vim
+*~
+*.swp
+
+# Mac
+.DS_Store
+
+# virtualenv
+_venv
+
+# Pelican
+output/
+plugins/
+themes/
+*.pid
+
