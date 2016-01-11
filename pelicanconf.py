@@ -3,13 +3,15 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Roie R. Black'
-SITENAME = u'TechBlog'
-SITEURL = ''
+SITENAME = u'Roie Black\'s TechBlog'
+SITEURL = 'http://www.black-devops.org'
 
 PATH = 'content'
+STATIC_PATHS = ['images']
 
 TIMEZONE = 'America/Chicago'
 
+USE_FOLDER_AS_CATEGORY = False
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
@@ -23,13 +25,34 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('ACC Home Page', 'http://www.austincc.edu/rblack'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('GitHub', 'https://github.com/rblack42/'),
+        ('LinkedIn', 'https://www.linkedin.com/profile/view?id=103423831&trk=spm_pic'),
+        ('Google+', 'https://www.google.com/+RoieBlack'),)
 
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Theme settings
+THEME = 'themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'cosmo'
+SHOW_ARTICLE_CATEGORY = False
+FAVICON = 'images/favicon.ico'
+BANNER = 'images/collingsF4.png'
+
+TAG_CLOUD_STEPS = 4
+TAG_CLOUD_MAX_ITEMS = 20
+TAGS_URL = "tags-{slug}.html"
+TAGS_SAVE_A = "tags.html"
+TAGS_SAVE_AS = "tags-{slug}.html"
+
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['pelican_comment_system',]
+ISSO_ENABLED = True
+ISSO_DEFAULT_STYLE = True
+ISSO_AVATARS = True
+
