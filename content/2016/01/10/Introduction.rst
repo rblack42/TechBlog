@@ -4,6 +4,7 @@ Docker VPS Setup
 :Date: 2016-01-10
 :Category: Docker
 :Tags: VPS, Install
+:slug: docker-vps-setup
 
 ..  include::   ../../../../references.inc
 

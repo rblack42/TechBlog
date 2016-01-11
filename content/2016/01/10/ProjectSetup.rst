@@ -4,6 +4,7 @@ Setting up TechBlog
 :Date: 2016-01-10
 :Tags: Blog, Pelican
 :Category: Python
+:slug: setting-up-techblog
 
 ..  include::   ../../../../references.inc
 
