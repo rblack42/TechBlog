@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Roie R. Black'
 SITENAME = u'Roie Black\'s TechBlog'
 SITEURL = 'http://www.black-devops.org'
+BANNER_SUBTITLE = u"exploring software systems"
 
 PATH = 'content'
 STATIC_PATHS = ['images']
@@ -33,6 +34,11 @@ SOCIAL = (('GitHub', 'https://github.com/rblack42/'),
         ('Google+', 'https://www.google.com/+RoieBlack'),)
 
 DEFAULT_PAGINATION = False
+DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = True
+
+YEARLY_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -47,12 +53,9 @@ BANNER = 'images/collingsF4.png'
 TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 20
 TAGS_URL = "tags-{slug}.html"
-TAGS_SAVE_A = "tags.html"
-TAGS_SAVE_AS = "tags-{slug}.html"
+TAGS_SAVE_A = "tag.html"
+TAGS_SAVE_AS = "tag-{slug}.html"
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['pelican_comment_system',]
-ISSO_ENABLED = True
-ISSO_DEFAULT_STYLE = True
-ISSO_AVATARS = True
+PLUGINS = ['pelican_comments',]
 
