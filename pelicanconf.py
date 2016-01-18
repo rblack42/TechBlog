@@ -57,5 +57,5 @@ TAGS_SAVE_A = "tag.html"
 TAGS_SAVE_AS = "tag-{slug}.html"
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['pelican_comments',]
+PLUGINS = ['pelican_comment_system',]
 
