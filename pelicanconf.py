@@ -40,22 +40,30 @@ DISPLAY_PAGES_ON_MENU = True
 YEARLY_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = False
 
-# Theme settings
+PLUGIN_PATHS = ["plugins"]
+
+PLUGINS = [
+    'extract_toc', 
+    'disqus_static', 
+]
+THEME='themes/bootstrap3'
+
+DISQUS_SITENAME = u'black-devops-blog'
+DISCUS_SECRET_KEY= u'InDePGOSUQys3bzScm5eN5SI7O8VImwLprHRP4hcqIm5v7Cu4U1z1UDoSQJVF6MJ'
+DISQUS_PUBLIC_KEY = u'xEDxWSlVYcXYVARER1I6cYsRygwZd9RkH3d4pTJcuOtllnFHRgVI9077fTVl5ORl'
+
 THEME = 'themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'cosmo'
 SHOW_ARTICLE_CATEGORY = False
-FAVICON = 'images/favicon.ico'
+FAVICON = 'images/favicon.png'
 BANNER = 'images/collingsF4.png'
 
 TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 20
-TAGS_URL = "tags-{slug}.html"
-TAGS_SAVE_A = "tag.html"
-TAGS_SAVE_AS = "tag-{slug}.html"
-
-PLUGIN_PATHS = ['plugins']
-PLUGINS = ['pelican_comment_system',]
+TAGS_URL = "tag-{slug}.html"
+TAGS_SAVE_A = "tags.html"
+TAG_SAVE_AS = "tag-{slug}.html"
+TAG_URL = "tag-{slug}.html"
 

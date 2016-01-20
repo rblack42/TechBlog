@@ -1,0 +1,4 @@
+beautifulsoup4==4.4.1
+disqus-python==0.4.2
+pelican==3.6.3
+Pillow==3.1.0

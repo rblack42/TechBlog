@@ -15,3 +15,5 @@ _venv
 output/
 *.pid
 
+# Misc
+disqus.txt
