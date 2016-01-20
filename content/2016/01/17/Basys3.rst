@@ -31,7 +31,7 @@ a Python based hardware description languag. The tool I will use if MyHDL. Once
 we have designed the processor, we will generate data files that will be used
 to program a specific FPGA board: The Digilend Basys 3 Artiz-7 board:
 
-..  image:: Basys3Artix7.png
+..  image:: images/Basys3Artix7.png
     :align: center
     :alt: Basys 3 Artix-7 FPGA
 
