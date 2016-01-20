@@ -13,7 +13,5 @@ _venv
 
 # Pelican
 output/
-plugins/
-themes/
 *.pid
 
