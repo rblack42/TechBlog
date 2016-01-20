@@ -1,5 +1,11 @@
-Roie Black's TechBlog 
-#####################
+TechBlog
+########
 
-This repo is a master copy of the articles posted on my blog at www.black-devops.org
+This repository hosts the source files for Roie Black's `TechBlog
+<http://www.black-devops.org/'>`_.
+
+If you are interested in Roie's personal blog, check our `Random Ramblings
+<http://www-co-pylit.org/blog/>`_.
+
+..  image:: https://img.shields.io/travis/rblack42/TechBlog.svg
 
